@@ -1,0 +1,79 @@
+<template name="3ff9220e">
+  <view class="_view data-v-71f545ae content">
+    <view class="_view data-v-71f545ae status_bar">
+      <view class="_view data-v-71f545ae top_view"></view>
+    </view>
+    <view class="_view data-v-71f545ae header flex">
+      <view class="_view data-v-71f545ae flex-1 company_name"> 闽安集团 </view>
+      <image class="_image data-v-71f545ae message" src="../../static/message.png" mode></image>
+      <image class="_image data-v-71f545ae search" src="../../static/search.png" mode></image>
+    </view>
+    <swiper class="_swiper data-v-71f545ae bannerSwiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="rgba(255,255,255,.35)" indicator-active-color="rgba(255,255,255,1)">
+      <swiper-item wx:key="item.id" key="{{item.id}}" wx:for="{{bannerList}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-71f545ae">
+        <image class="_image data-v-71f545ae bannerImg" src="{{item}}" mode></image>
+      </swiper-item>
+    </swiper>
+    <view class="_view data-v-71f545ae wrapper">
+      <view class="_view data-v-71f545ae flex selcType_ul">
+        <view wx:key="item.id" key="{{item.id}}" bindtap="handleProxy" data-eventid="{{'7ua-0-'+index}}" data-comkey="{{$k}}" wx:for="{{selcType}}" wx:for-index="index" wx:for-item="item" class="_view data-v-71f545ae {{[true ? 'selcType_li' : '', item.active ? 'active' : '']}}">{{item.value}}
+          <text class="_text data-v-71f545ae triangle"></text>
+        </view>
+      </view>
+      <view class="_view data-v-71f545ae {{[true ? 'toggle_panel' : '', !selcType[2].active ? 'hide' : '']}}">
+        <view class="_view data-v-71f545ae panel_mask" bindtap="handleProxy" data-eventid="{{'Htm-1'}}" data-comkey="{{$k}}"></view>
+        <view class="_view data-v-71f545ae toggle_panel_content">
+          <view wx:key="item.id" key="{{item.id}}" bindtap="handleProxy" data-eventid="{{'2nF-2-'+index}}" data-comkey="{{$k}}" wx:for="{{sortsList}}" wx:for-index="index" wx:for-item="item" class="_view data-v-71f545ae {{[true ? 'toggle_panel_li' : '', item.active ? 'active' : '']}}">
+          {{item.value}} </view>
+        </view>
+      </view>
+      <view class="_view data-v-71f545ae {{[true ? 'toggle_panel' : '', !selcType[3].active ? 'hide' : '']}}">
+        <view class="_view data-v-71f545ae panel_mask" bindtap="handleProxy" data-eventid="{{'Jmw-3'}}" data-comkey="{{$k}}"></view>
+        <view class="_view data-v-71f545ae toggle_panel_content">
+          <view class="_view data-v-71f545ae module">
+            <view class="_view data-v-71f545ae filter_module">
+              <view class="_view data-v-71f545ae filter_h3">企业规模</view>
+              <view class="_view data-v-71f545ae flex filter_ul">
+                <view class="_view data-v-71f545ae filter_li">不限</view>
+                <view class="_view data-v-71f545ae filter_li active">1-49人</view>
+              </view>
+            </view>
+            <view class="_view data-v-71f545ae filter_module">
+              <view class="_view data-v-71f545ae filter_h3">企业规模</view>
+              <view class="_view data-v-71f545ae flex filter_ul">
+                <view class="_view data-v-71f545ae filter_li">不限</view>
+              </view>
+            </view>
+          </view>
+          <view class="_view data-v-71f545ae flex toggle_panel_footer">
+            <button type="default" class="_button data-v-71f545ae">取消</button>
+            <button type="primary" class="_button data-v-71f545ae">确定</button>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-71f545ae job_ul">
+        <view class="_view data-v-71f545ae job_li" wx:for="{{[1,2,3,4,5,6]}}" wx:for-index="index" wx:for-item="item">
+          <view class="_view data-v-71f545ae flex">
+            <view class="_view data-v-71f545ae flex-1 job_name">产品经理</view>
+            <view class="_view data-v-71f545ae salary">3-6K</view>
+          </view>
+          <view class="_view data-v-71f545ae flex job_desc">
+            <view class="_view data-v-71f545ae city">福州</view>
+            <view class="_view data-v-71f545ae edu">本科</view>
+            <view class="_view data-v-71f545ae exp">1-3年</view>
+          </view>
+          <view class="_view data-v-71f545ae flex company_wrap">
+            <image src="../../static/company.png" class="_image data-v-71f545ae company_img"></image>
+            <view class="_view data-v-71f545ae flex-1">
+              <view class="_view data-v-71f545ae company_name">网龙科技有限公司</view>
+              <view class="_view data-v-71f545ae company_tro">国内上市公司</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-71f545ae empty hide">
+        <image class="_image data-v-71f545ae index_empty" src="../../static/index_empty.png" mode></image>
+        <view class="_view data-v-71f545ae tip"> 暂无相关职位信息~ </view>
+      </view>
+    </view>
+  </view>
+</template>

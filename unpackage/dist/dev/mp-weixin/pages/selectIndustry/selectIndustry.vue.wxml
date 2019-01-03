@@ -1,0 +1,36 @@
+<import src="/components/uni-icon.vue.wxml" />
+<template name="7a39ff62">
+  <view class="_view data-v-ae48d070 selectIndustry">
+    <view class="_view data-v-ae48d070 container">
+      <view class="_view data-v-ae48d070 module">
+        <view class="_view data-v-ae48d070 filter_module alrSelced">
+          <view class="_view data-v-ae48d070 filter_h3 bold">已选择标签
+            <text class="_text data-v-ae48d070 active">{{alrSelcedArr.length}}/3</text>
+          </view>
+          <view class="_view data-v-ae48d070 flex filter_ul">
+            <view class="_view data-v-ae48d070 filter_li active" bindtap="handleProxy" data-eventid="{{'1H3-0-'+index}}" data-comkey="{{$k}}" wx:for="{{alrSelcedArr}}" wx:for-index="index" wx:for-item="item">{{item}}
+              <template type="closeempty" size="24" data="{{...$root['0'], ...$root[$kk+'X4N-0-'+index],$root}}" is="12a862cc"></template>
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-ae48d070 filter_module">
+          <view class="_view data-v-ae48d070 filter_module_border">
+            <view class="_view data-v-ae48d070 filter_h3 bold">互联网/IT/电子/通信</view>
+            <view class="_view data-v-ae48d070 flex filter_ul">
+              <view class="_view data-v-ae48d070 filter_li">不限</view>
+            </view>
+          </view>
+          <view class="_view data-v-ae48d070 filter_module_border">
+            <view class="_view data-v-ae48d070 filter_h3 bold">互联网/IT/电子/通信</view>
+            <view class="_view data-v-ae48d070 flex filter_ul">
+              <view class="_view data-v-ae48d070 filter_li" wx:for="{{100}}" wx:for-index="index" wx:for-item="item">广告营销</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-ae48d070 flex footer">
+        <button type="primary" class="_button data-v-ae48d070">保存</button>
+      </view>
+    </view>
+  </view>
+</template>

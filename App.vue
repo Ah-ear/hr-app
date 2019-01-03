@@ -1,5 +1,8 @@
+
 <script>
+	
 	export default {
+		
 		onLaunch: function () {
 			console.log('App Launch')
 		},
@@ -12,7 +15,7 @@
 	}
 </script>
 
-<style>
-	@import './common/common.css'
-	/*每个页面公共css */
+<style lang="less">
+@import './common/uni.css';
+@import './common/common.less';
 </style>

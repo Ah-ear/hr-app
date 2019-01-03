@@ -1,0 +1,46 @@
+@import "../../common/vendor.wxss";
+
+page.data-v-71f545ae {
+  background: #f9f9f9;
+}
+.header.data-v-71f545ae {
+  padding: 0 32rpx 18rpx;
+  line-height: 86rpx;
+  background: #fff;
+}
+.header .company_name.data-v-71f545ae {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.message.data-v-71f545ae {
+  padding: 0 23rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.search.data-v-71f545ae {
+  padding-left: 23rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.bannerSwiper.data-v-71f545ae {
+  padding: 0 32rpx;
+  height: 200rpx;
+  background: #fff;
+}
+.bannerImg.data-v-71f545ae {
+  width: 100%;
+  height: 200rpx;
+  border-radius: 6rpx;
+}
+.index_empty.data-v-71f545ae {
+  display: block;
+  margin: 200rpx auto 85rpx;
+  width: 351rpx;
+  height: 256rpx;
+}
+.tip.data-v-71f545ae {
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1;
+}

@@ -1,0 +1,254 @@
+.flex{
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.flex-1{
+	flex:1;
+	-webkit-flex:1;
+	
+}
+.bold{
+	font-weight: bold;
+}
+button[type=primary]{
+	background: #5296f2;
+	font-size: 30upx;
+	border:1px solid #5296f2;
+}
+button:after{
+	border-color:#bbb;
+	border:none;
+}
+button[type=default]{
+	background: #fff;
+	font-size: 30upx;
+	color:#666;
+	border:1px solid #bbb;
+}
+
+.hide{
+	display: none !important;
+}
+/* 状态栏 */
+page{
+	overflow: hidden;
+}
+.status_bar {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	height: var(--status-bar-height);
+	width: 100%;
+	background: #fff;
+}
+.top_view{
+	height: var(--status-bar-height);
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+/* 头部 */
+.page_header{
+	position: fixed;
+	top: var(--status-bar-height);
+	left:0;
+	right:0;
+	background: #fff;
+	height:88upx;
+	line-height: 88upx;
+	border-bottom: 1px solid #e6e6e6;
+	.page_header_left{
+		width: 95upx;
+		text-align: center;
+	}
+	.page_header_title{
+		font-size: 34upx;
+		flex:1;
+		-webkit-flex:1;
+		text-align: center;
+	}
+	.page_header_right{
+		padding:0 40upx;
+		font-size: 28upx;
+		color:#7d7d7d;
+	}
+}
+/* #ifndef MP-WEIXIN */
+.container{
+	margin-top: var(--status-bar-height);
+	padding-top:88upx;
+}
+/* #endif */
+/* 导航筛选 */
+.selcType_ul{
+	background: #fff;
+	border-bottom:1px solid #f5f5f5;
+}
+.selcType_ul .selcType_li{
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+	line-height:88upx;
+	flex:1;
+	-webkit-flex:1;
+	font-size: 28upx;
+}
+.selcType_ul .selcType_li .triangle{
+	margin-left: 14upx;
+	width: 0;
+    height: 0;
+    border-left: 10upx solid transparent;
+    border-right: 10upx solid transparent;
+    border-top: 9upx solid #bababa;
+}
+.selcType_ul .selcType_li.active{
+	color:#5296f2;
+}
+.selcType_ul .selcType_li.active .triangle{
+	border-top-color: #5296f2;
+}
+.active{
+	color:#5296f2 !important;
+}
+
+/* 职位公共 */
+.job_li{
+	margin-bottom: 10upx;
+	padding:32upx 30upx;
+	font-size: 26upx;
+	background: #fff;
+}
+.job_desc{
+	line-height: 1;
+	padding:12upx 0;
+	
+	color:#696969;
+}
+.job_desc view{
+	padding:0 10upx;
+	border-right:1px solid #c8c8c8;
+}
+.job_desc view:first-child{
+	padding-left: 0;;
+}
+.job_desc view:last-child{
+	border-right: none;
+}
+.job_name{
+	height: 52upx;
+	line-height: 52upx;
+	font-size: 32upx;
+	font-weight: bold;
+}
+.salary{
+	color:#ed7c5c;
+	font-size: 32upx;
+}
+.company_wrap{
+	padding:20upx 0 12upx;
+}
+.company_img{
+	margin-right: 20upx;
+	width: 80upx;
+	height:70upx;
+}
+.company_wrap .company_name{
+	font-size: 28upx;
+}
+.company_wrap .company_tro{
+	color:#999;
+}
+
+
+
+/* 筛选面板 */
+.wrapper{
+	position: relative;
+}
+.toggle_panel{
+	line-height: 77upx;
+	font-size: 28upx;
+	.toggle_panel_content{
+		padding:17upx 0;
+		position: absolute;
+		top:77upx;
+		left:0;
+		width:100%;
+		z-index:100;
+		background: #fff;
+	}
+	
+	.panel_mask{
+		position: absolute;
+		background: rgba(0,0,0,.5);
+		top:77upx;
+		bottom: 0;
+		left:0;
+		right:0;
+		z-index:2;
+	}
+	.toggle_panel_li{
+		position: relative;
+		z-index: 100;
+		padding: 0 50upx;
+	}
+	
+	
+	.toggle_panel_footer{
+		position: absolute;
+		bottom: 0;
+		left:0;
+		width:100%;
+		background: #fff;
+		height:140upx;
+		border-top: 1px solid #f5f5f5;
+		button{
+			width: 337upx;
+			height:80upx;
+			line-height: 80upx;
+			border-radius: 40upx;
+			overflow: hidden;
+			
+		}
+		button:after{
+			border-radius: 40upx;
+		}
+	}
+}
+.module{
+	padding-bottom: 123upx;
+	max-height: 787upx;
+	overflow-y:auto;
+	/* background: #fff; */
+}
+.filter_module{
+	padding: 0 30upx;
+	margin-bottom: 28upx;
+	font-size: 28upx;
+	.filter_h3{
+		line-height: 70upx;
+		font-size: 28upx;
+	}
+	.filter_li{
+		height:84upx;
+		line-height: 84upx;
+		box-sizing: border-box;
+		margin-right: 10upx;
+		margin-bottom: 10upx;
+		min-width: 220upx;
+		text-align: center;
+		padding:0 12upx;
+		border:1px solid #bbb;
+		color:#1c1c1c;
+		border-radius: 6upx;
+		font-size: 28upx;
+		&.active{
+			background: #e9f2ff;
+			border-color:#5296f2;
+		}
+	}
+}

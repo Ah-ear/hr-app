@@ -1,16 +1,47 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    "pages" : [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "招聘"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#fff",
-		"backgroundColor": "#F8F8F8"
-	}
+		    "path" : "pages/selectIndustry/selectIndustry",
+		    "style" : {
+		        "navigationBarTitleText" : "选择行业",
+		        "app-plus" : {
+					"titleNView" : false
+// 		            "titleNView" : {
+// 						"buttons":[{
+// 							"text":"保存  ",
+// 							"fontSize":"12px",
+// 							"color":"#7d7d7d"
+// 						}]
+// 					}
+		        }
+		    }
+		},
+		{
+		    "path" : "pages/selectCity/selectCity",
+		    "style" : {
+		        "navigationBarTitleText" : "选择城市"
+// 				"app-plus" : {
+// 				    "titleNView" : false
+// 				}
+		    }
+		},
+        
+        {
+            "path" : "pages/index/index",
+            "style" : {
+                "navigationBarTitleText" : "招聘",
+                "app-plus" : {
+                    "titleNView" : true
+                }
+            }
+        }
+        
+    ],
+    "globalStyle" : {
+        "navigationBarTextStyle" : "black",
+        "navigationBarTitleText" : "hr-app",
+        "navigationBarBackgroundColor" : "#fff",
+        "backgroundColor" : "#F8F8F8"
+    }
 }
